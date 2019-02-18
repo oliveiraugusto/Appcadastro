@@ -19,7 +19,6 @@
         <StackLayout Orientation="Horizontal">
             <Button Text="Entrar" 
                     HorizontalOptions="FillAndExpand"
-                    Clicked=""
                     x:Name="buttonEntrar"
                     Clicked="ButtonEntrar_Clicked"/>
             <Button Text="Esqueci minha senha" 
