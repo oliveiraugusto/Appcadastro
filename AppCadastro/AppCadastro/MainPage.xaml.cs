@@ -14,21 +14,25 @@ namespace AppCadastro
             InitializeComponent();
         }
 
-        private void ButtonEntrar_Clicked(object sender, EventArgs e)
+        private async void ButtonEntrar_Clicked(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(entryLogin.Text) || string.IsNullOrEmpty(entrySenha.Text))
             {
-                DisplayAlert("Ops...", "Não deixe os Campos em branco", "OK");
+                await DisplayAlert("Ops...", "Não deixe os Campos em branco", "OK");
             }
             else
             {
                 if(entryLogin.Text == "admin" && entrySenha.Text == "admin")
                 {
-                    
+                    //await DisplayAlert("SUCESSO", "SUCESSO", "OK");
+
+                    var page = new Menu();
+                    await Navigation.PushModalAsync(page);
+
                 }
                 else
                 {
-                    DisplayAlert("Ops..", "Login e/ou senha invalidos", "OK");
+                    await DisplayAlert("Ops..", "Login e/ou senha invalidos", "OK");
                 }
             }
 

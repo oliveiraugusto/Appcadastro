@@ -6,12 +6,16 @@
              BackgroundImage="background.png">
 
     <StackLayout>
+        <Image Source="Newlogo.png"
+               WidthRequest="100"
+               HorizontalOptions="Center"
+               Margin="20"/>
         <Entry Margin="5,20,5,10"
                Placeholder="Digite seu Login" 
                x:Name="entryLogin" 
                HorizontalOptions="FillAndExpand" 
                HorizontalTextAlignment="Center" />
-        <Entry Placeholder="1234" 
+        <Entry Placeholder="****" 
                x:Name="entrySenha" 
                IsPassword="True"  
                HorizontalOptions="FillAndExpand" 
